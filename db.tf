@@ -16,7 +16,7 @@ resource "azurerm_mssql_database" "db" {
 }
 
 resource "azurerm_redis_cache" "redis" {
-    name = "redis-${var.project_name}-${var.environment}"
+    name = "redis2-${var.project_name}-${var.environment}"
     location = var.location
     resource_group_name = azurerm_resource_group.rg.name
     capacity = 1
