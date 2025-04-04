@@ -29,3 +29,14 @@ resource "azurerm_redis_cache" "redis" {
     }
 }
 
+resource "azurerm_search_service" "search" {
+  name = "search2-${var.project_name}-${var.environment}"
+  resource_group_name = "rg-${var.project_name}-${var.environment}"
+  location = var.location
+  sku = "basic"
+  partition_count = 1
+  replica_count = 1
+  tags = var.tags
+  
+}
+

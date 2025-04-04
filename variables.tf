@@ -27,7 +27,7 @@ variable "tags" {
   default     = {
     Environment = "dev"
     date = "abril-2025"
-    Owner       = "CarlosAmaya"
+    Owner       = "Erick_Herrera"
   }
 }
 
